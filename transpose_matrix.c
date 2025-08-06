@@ -1,5 +1,3 @@
-C:
-
 #include <stdio.h>
 int main() {
     int r, c;
@@ -14,11 +12,3 @@ int main() {
             printf("%d ", mat[i][j]);
     return 0;
 }
-Python:
-
-r, c = map(int, input().split())
-mat = [list(map(int, input().split())) for _ in range(r)]
-for j in range(c):
-    for i in range(r):
-        print(mat[i][j], end=" ")
-    print()
