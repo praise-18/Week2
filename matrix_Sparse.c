@@ -1,5 +1,3 @@
-C:
-
 #include <stdio.h>
 int main() {
     int r, c, zero = 0;
@@ -15,9 +13,3 @@ int main() {
     printf(zero > total / 2 ? "Sparse\n" : "Not Sparse\n");
     return 0;
 }
-Python:
-
-r, c = map(int, input().split())
-mat = [list(map(int, input().split())) for _ in range(r)]
-zeros = sum(row.count(0) for row in mat)
-print("Sparse" if zeros > (r * c) // 2 else "Not Sparse")
