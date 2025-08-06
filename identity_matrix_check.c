@@ -1,5 +1,3 @@
-C:
-
 #include <stdio.h>
 int main() {
     int n, is_identity = 1;
@@ -14,9 +12,3 @@ int main() {
     printf(is_identity ? "Identity Matrix\n" : "Not Identity\n");
     return 0;
 }
-Python:
-
-n = int(input())
-mat = [list(map(int, input().split())) for _ in range(n)]
-identity = all((mat[i][j] == 1 if i == j else mat[i][j] == 0) for i in range(n) for j in range(n))
-print("Identity Matrix" if identity else "Not Identity")
