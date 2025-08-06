@@ -1,5 +1,3 @@
-C:
-
 #include <stdio.h>
 int main() {
     int r, c, count = 0;
@@ -16,9 +14,3 @@ int main() {
     printf("Total Zeros: %d\n", count);
     return 0;
 }
-Python:
-
-r, c = map(int, input().split())
-mat = [list(map(int, input().split())) for _ in range(r)]
-count = sum(row.count(0) for row in mat)
-print("Total Zeros:", count)
