@@ -1,5 +1,3 @@
-C:
-
 #include <stdio.h>
 int main() {
     int n;
@@ -11,9 +9,3 @@ int main() {
         printf("%d ", poly1[i] + poly2[i]);
     return 0;
 }
-Python:
-
-n = int(input())
-p1 = list(map(int, input().split()))
-p2 = list(map(int, input().split()))
-print("Sum:", [p1[i] + p2[i] for i in range(n)])
