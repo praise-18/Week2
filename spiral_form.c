@@ -1,5 +1,3 @@
-C:
-
 #include <stdio.h>
 int main() {
     int r, c, i, row = 0, col = 0;
@@ -24,7 +22,6 @@ int main() {
     }
     return 0;
 }
-Python:
 r, c = map(int, input().split())
 mat = [list(map(int, input().split())) for _ in range(r)]
 row, col, last_row, last_col = 0, 0, r-1, c-1
